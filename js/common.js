@@ -70,3 +70,31 @@
 
  //let name = prompt("Write ur name", "");
  //alert (name);
+
+
+//if...else
+/*
+
+ let value = prompt("Oficial name J.S?", '');
+
+ if (value == 'ECMASript') {
+	 alert("Right!");
+ } else {
+	 alert ("No");
+ }
+
+/////////////////////////////////////////
+
+ let number = prompt("Write Number", '');
+
+ if (number > 0) {
+		alert ("1")
+ }else if (number < 0) {
+		alert ("- 1");
+ }else if (number == 0) {
+	 	alert("0");
+ }else {
+	 alert('something wrong');
+ }
+
+*/
