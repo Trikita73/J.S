@@ -19,7 +19,7 @@
 
 //console.log(firstName)
 
-// 1.2 Мутирование
+// 2 Мутирование
 
 //console.log('Имя Человека: ' + firstName)
 //console.log('Имя Человека: ' + ', а возраст человека:' + age)
@@ -31,7 +31,7 @@
 
 //alert(firstName + ' ' + lastName)
 
-// 3 Операторы 
+// 3.0 Операторы 
 //const currentYear = 2020
 //const birthYear = 1991
 
@@ -44,7 +44,7 @@
 //alert(message)
 
 
-// Переменные //
+// 4.0 Переменные //
 
 //let admin, name;
 //name = "Djon";
@@ -72,7 +72,7 @@
  //alert (name);
 
 
-//if...else
+// 5.0 Оператор if...else
 /*
 
  let value = prompt("Oficial name J.S?", '');
@@ -100,11 +100,11 @@
 */
 
 
-
 //if (age >= 14 && age <= 90);
 
 //if(!(age >==14 && age <==90))
 
+/*
 let login = prompt('Введите логин', '');
 
 if(login == 'Admin') {
@@ -122,3 +122,13 @@ if(login == 'Admin') {
 	alert('не верный логин');
 }
 
+*/
+
+
+// 6.0 Оператор <<??>>
+
+let user;
+alert(user ?? 'Аноним'); // Аноним 
+
+let user = 'Vasya'
+Alert(user ?? 'Аноним'); // Vasya
