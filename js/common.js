@@ -19,7 +19,7 @@
 
 //console.log(firstName)
 
-// 2 Мутирование
+// 1.2 Мутирование
 
 //console.log('Имя Человека: ' + firstName)
 //console.log('Имя Человека: ' + ', а возраст человека:' + age)
@@ -31,7 +31,7 @@
 
 //alert(firstName + ' ' + lastName)
 
-// 3.0 Операторы 
+// 3 Операторы 
 //const currentYear = 2020
 //const birthYear = 1991
 
@@ -44,7 +44,7 @@
 //alert(message)
 
 
-// 4.0 Переменные //
+// Переменные //
 
 //let admin, name;
 //name = "Djon";
@@ -72,10 +72,10 @@
  //alert (name);
 
 
-// 5.0 Оператор if...else
-/*
+// Операторы if...else
 
- let value = prompt("Oficial name J.S?", '');
+/*
+let value = prompt("Oficial name J.S?", '');
 
  if (value == 'ECMASript') {
 	 alert("Right!");
@@ -96,9 +96,7 @@
  }else {
 	 alert('something wrong');
  }
-
 */
-
 
 //if (age >= 14 && age <= 90);
 
@@ -121,14 +119,122 @@ if(login == 'Admin') {
 }else {
 	alert('не верный логин');
 }
-
 */
 
+// Оператор <<??>>
 
-// 6.0 Оператор <<??>>
-
+/*
 let user;
 alert(user ?? 'Аноним'); // Аноним 
 
 let user = 'Vasya'
 Alert(user ?? 'Аноним'); // Vasya
+*/
+
+
+// Циклы While, do...While, for (дерективы: break, continue)
+
+/*
+let i =3;
+
+while (i) {
+	alert( i-- ); // 3,2,1
+}
+*/
+
+
+/*
+let i = 0;
+
+while (++i < 5){
+	alert (i); // 1,2,3,4
+}
+*/
+
+/*
+let i = 0;
+
+while (i++ < 5){
+	alert (i); // 1,2,3,4,5
+}
+*/
+
+/*
+for (let i = 0; i < 5; i++) {
+	alert(i) // 0,1,2,3,4
+}
+*/
+
+/*
+for (let i = 0; i < 5; ++i) {
+	alert(i) // 0,1,2,3,4
+}
+*/
+
+// Вывести четные числа от 2 до 10
+
+/*
+for (let i = 2; i <=10; i++) {
+	if(i % 2 == 0) { //Для проверки на чётность мы здесь используем оператор получения остатка от деления %.
+		alert(i);
+	}
+}
+*/
+
+// Аналог for and while, do...while
+
+/*
+for (let i = 0; i < 3; i++) {
+  alert( `number ${i}` );
+}
+
+//----
+
+let i = 0;
+	do {
+		alert( `number: ${i}` );
+		i++;
+	}while(i < 3);
+
+//-----
+
+let i = 0;
+	while (i < 3) {
+		alert( `number ${i}` );
+		i++;
+	}
+*/
+
+
+// Повторять цикл, пока ввод неверен
+
+/*
+let num;
+
+do {
+	num = prompt("Введите число больше 100!", '');
+}while(num <= 100 && num);
+
+//------
+
+let num 
+
+do { 
+	num = prompt("Введите число больше 100!", '');
+	if(num > 100 || num == null)break;
+}while(num);
+
+*/
+
+// Вывести простые числа
+
+/*
+let n = 10
+
+nextPrime:for(i = 2; i <=n; i++) { // Для всех i...
+	for (j = 2; j < i; j++) { // проверить, делится ли число..
+		if(i % j == 0) continue nextPrime; // не подходит, берём следующее
+	}
+	alert (i); //простое число
+}
+*/
