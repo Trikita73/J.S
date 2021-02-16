@@ -271,6 +271,7 @@ if(browser == 'Edge') {
 }
 */
 
+/*
 const number = +prompt('Введите число между 0 и 3', '');
 
 switch(number) {
@@ -286,4 +287,99 @@ switch(number) {
 		break;
 	default:
 		alert('Неверное число!')			
+}
+*/
+
+// Функции
+
+/*
+function checkAge(age) {
+	if(a > 18) {
+		return true;
+	}else {
+		return confirm('Родители разрешили?');
+	}
+}
+
+// Аналог '?' и '||'
+
+// Пример '||'
+function checkAge(age) {
+	return (age > 18) || confirm('Родители разрешили?'); 
+}
+
+// Пример '?'
+function checkAge(age) {
+	return (age >18) ? true : confirm('Родители разрешили?');
+}
+*/
+
+
+// Напишите функцию min(a,b), которая возвращает меньшее из чисел a и b.
+
+/*
+function getMin(a, b) {
+	if(a < b){
+		return a;
+	}else {
+		return b;
+	}
+}
+
+//Вариант решения с оператором ?:
+
+function getMin(a, b) {
+	return a < b ? a : b;
+}
+
+//P.S. В случае равенства a == b не имеет значения, что возвращать.
+*/
+
+//TUSK
+// 1.1. Напишите функцию pow(x,n), которая возвращает x в степени n. Иначе говоря, умножает x на себя n раз и возвращает результат.
+// 2.1. Создайте страницу, которая запрашивает x и n, а затем выводит результат pow(x,n).
+// P.S. В этой задаче функция обязана поддерживать только натуральные значения n, т.е. целые от 1 и выше.
+
+/*
+//1.1
+// 1) pow(3, 2) = 3 * 3 = 9
+// 2) pow(3, 3) = 3 * 3 * 3 = 27
+// 3) pow(1, 100) = 1 * 1 * ...* 1 = 1
+
+function getPow(x, n) {
+
+		return x ** n;
+}
+
+console.log(getPow(2, 3));
+
+
+function getPow(x, n ) {
+	return x ** n;
+}
+
+console.log(getPow(3, 3));
+
+function getPow(x, n) {
+	return x ** n;
+}
+
+console.log(getPow(1, 100));
+*/
+
+
+function getPow(x, n) {
+	let result = 1;
+	for(let i =1; i < n; i++) {
+		result *= x;
+  }
+	return result;
+}
+	let x = prompt("Введите число x", '');
+	let n = prompt("Введите число n", '');
+
+	if(n <1) {
+		alert(`Степень ${n} не поддерживается, используйте натуральное число`);
+	} else {
+	alert(getPow(x, n));
 }
