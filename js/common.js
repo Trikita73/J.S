@@ -367,7 +367,7 @@ function getPow(x, n) {
 console.log(getPow(1, 100));
 */
 
-
+/*
 function getPow(x, n) {
 	let result = 1;
 	for(let i =1; i < n; i++) {
@@ -383,3 +383,47 @@ function getPow(x, n) {
 	} else {
 	alert(getPow(x, n));
 }
+*/
+
+// Функции-стрелки
+
+//Заменитm код Function Expression стрелочной функцией:
+
+/*
+function ask(question, yes, no) {
+  if (confirm(question)) yes()
+  else no();
+}
+
+ask(
+  "Вы согласны?",
+  function() { alert("Вы согласились."); },
+  function() { alert("Вы отменили выполнение."); }
+);
+*/
+
+// Решение
+
+// Пример 1:
+
+/*
+let ask  = (question, yes, no) =>  (confirm(question) ? yes() : no());
+
+let yes = () => alert("Вы согласились.");
+let no  = () => alert("Вы отменили выполнение.");
+
+ask("Вы согласны?", yes, no);
+*/
+
+// Пример 2:
+
+function ask(question, yes, no) {
+	if(confirm(question)) yes()
+	else no();
+}
+
+ask(
+	"Вы согласны?",
+	() => alert("Вы согласились."),
+	() => alert("Вы отменили выполнение."),
+);
