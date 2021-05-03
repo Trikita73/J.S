@@ -13,19 +13,27 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<h1 class="title_prog">Java Script Basic 1</h1>
+	<h1 class="title_prog">Java Script Basic 2</h1>
 	<div class = "container">
 		<div class = "task">
-            <p>Используя конструкцию if..else, написать код, который будет спрашивать: „Твое имя?“ Если пользователь вводит «Свое Имя», то показать: «Right!», в противном случае – отобразить: «Wrong»</p>
+            <p>Используя конструкцию if..else, напишите код, который получает число через prompt, а затем выводит в alert:<br>
+                1, если значение больше нуля,<br>
+                -1, если значение меньше нуля,<br>
+                0, если значение равно нулю.<br>
+                Предполагается, что пользователь вводит только числа.</p>
             <div class = "task_refresh"><p>Чтоб запустить задачу нужно обновить страницу!</p></div>
         </div>
         <div class = "task_example">
-            <p>let value = prompt("Your Name?", '');<br>
-                if (value == 'Andrii') {<br>
-                alert("Right!");<br>
-                } else {<br>
-                alert ("Wrong");<br>
-                }<br>
+            <p>let number = prompt("Write Number", '');<br>
+                if (number > 0) {<br>
+                       alert ("1")<br>
+                }else if (number < 0) {<br>
+                       alert ("- 1");<br>
+                }else if (number == 0) {<br>
+                        alert("0");<br>
+                }else {<br>
+                    alert('something wrong');<br>
+                }
             </p>
         </div>
 	</div>
@@ -45,6 +53,6 @@
 		</div>
 	</footer>
 	<script src="js/libs.min.js"></script>
-	<script src="js/JS_basic_1.1.js"></script>
+	<script src="js/JS_basic_1.2.js"></script>
 </body>
 </html>
