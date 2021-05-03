@@ -417,6 +417,7 @@ ask("Вы согласны?", yes, no);
 
 // Пример 2:
 
+/*
 function ask(question, yes, no) {
 	if(confirm(question)) yes()
 	else no();
@@ -427,3 +428,4 @@ ask(
 	() => alert("Вы согласились."),
 	() => alert("Вы отменили выполнение."),
 );
+*/
