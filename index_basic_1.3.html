@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Java Script (Basic)</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<h1 class="title_prog">Java Script Basic 3</h1>
+	<div class = "container">
+		<div class = "task">
+            <p>Написать код, который будет спрашивать логин с помощью prompt.<br>
+                Если посетитель вводит «Админ», то prompt запрашивает пароль, если ничего не введено или нажата клавиша Esc – показать «Отменено», в противном случае отобразить «Я вас не знаю».<br>
+                Пароль проверять так:<br>
+                Если введён пароль «Я главный», то выводить «Здравствуйте!»,<br>
+                Иначе – «Неверный пароль»,<br>
+                При отмене – «Отменено».<br>
+                Для решения используйте вложенные блоки if. Обращайте внимание на стиль и читаемость кода<br>
+                Подсказка: передача пустого ввода в приглашение prompt возвращает пустую строку ''. Нажатие клавиши Esc во время запроса возвращаетnull.</p>
+            <div class = "task_refresh"><p>Чтоб запустить задачу нужно обновить страницу!</p></div>
+        </div>
+        <div class = "task_example">
+            <p>let login = prompt('Введите логин', '');<br>
+
+            if(login == 'Admin') {<br>
+                let password = prompt('Введите пароль', '');<br>
+                if(password == 'I am main') {<br>
+                    alert("Привет Админ");<br>
+                }else if(password == '' || password == null) {<br>
+                    alert('Отмена');<br>
+                }else {<br>
+                    alert('не верный пароль');<br>
+                }<br>
+            }else if(login == '' || login == null) {<br>
+                alert('Отмена');<br>
+            }else {<br>
+                alert('не верный логин');<br>
+            }</p>
+
+        </div>
+	</div>
+    <div class = "container">
+		<button class = "chapters">
+			<a href="index_basic.html">
+				<h3 class = "chaptersh3">⟸ Back</h3>
+			</a>
+		</button>
+	</div>
+	
+	<footer>
+		<div class = "footer_copyright">
+			<a href="http://high-wave.000webhostapp.com/">
+				<p>© 2021 High-Wave.com</p>
+			</a>
+		</div>
+	</footer>
+	<script src="js/libs.min.js"></script>
+	<script src="js/JS_basic_1.3.js"></script>
+</body>
+</html>
