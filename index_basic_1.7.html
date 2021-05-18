@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Java Script (Basic)</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<h1 class="title_prog">Java Script Basic 7</h1>
+	<div class = "container">
+		<div class = "task">
+            <p>Переписать условия "if" на "switch"<br>
+               Перепишите код с использованием одной конструкции switch:<br>
+               const number = +prompt('Введите число между 0 и 3', '');<br>
+
+				if (number === 0) {<br>
+				  alert('Вы ввели число 0');<br>
+				}<br>
+
+				if (number === 1) {<br>
+				  alert('Вы ввели число 1');<br>
+				}<br>
+
+				if (number === 2 || number === 3) {<br>
+				  alert('Вы ввели число 2, а может и 3');<br>
+            </p>
+            <div class = "task_refresh"><p>Чтоб запустить задачу нужно обновить страницу!</p></div>
+        </div>
+        <div class = "task_example">
+            <p>Первые две проверки – обычный case, третья разделена на два case:<br>
+			const number = +prompt('Введите число между 0 и 3', '');<br>
+
+				switch (number) {<br>
+				  case 0:<br>
+				    alert('Вы ввели число 0');<br>
+				    break;<br>
+
+				  case 1:<br>
+				    alert('Вы ввели число 1');<br>
+				    break;<br>
+
+				  case 2:<br>
+				  case 3:<br>
+				    alert('Вы ввели число 2, а может и 3');<br>
+				    break;<br>
+				}<br>
+			</p>
+			<p style="color: #000;">Обратите внимание: break внизу не обязателен.<br>
+
+				Допустим, он не стоит. Есть шанс, что в будущем нам понадобится добавить в конец ещё один case, например case 4, и мы, вполне вероятно, забудем этот<br> break поставить. В результате выполнение case 2/case 3 продолжится на case 4 и будет ошибка.
+			</p>
+        </div>
+	</div>
+    <div class = "container">
+		<button class = "chapters">
+			<a href="index_basic.html">
+				<h3 class = "chaptersh3">⟸ Back</h3>
+			</a>
+		</button>
+	</div>
+	
+	<footer>
+		<div class = "footer_copyright">
+			<a href="http://high-wave.000webhostapp.com/">
+				<p>© 2021 High-Wave.com</p>
+			</a>
+		</div>
+	</footer>
+	<script src="js/libs.min.js"></script>
+	<script src="js/JS_basic_1.7.js"></script>
+</body>
+</html>

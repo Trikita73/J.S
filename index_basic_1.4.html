@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Java Script (Basic)</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<h1 class="title_prog">Java Script Basic 4</h1>
+	<div class = "container">
+		<div class = "task">
+            <p>Повторять цикл, пока не будет введенн правильный набор цифр<br>
+                Через prompt введенно число, большее 100. Если посетитель ввёл другое число – попросит ввести ещё раз.<br>
+            	Цикл должен спрашивать число пока либо посетитель не введёт число, большее 100, либо не нажмёт кнопку Отмена (ESC).<br>
+				Предполагается, что посетитель вводит только числа.<br>
+            </p>
+            <div class = "task_refresh"><p>Чтоб запустить задачу нужно обновить страницу!</p></div>
+        </div>
+        <div class = "task_example">
+            <p>
+            	let num;<br>
+				do {<br>
+				  num = prompt("Введите число, большее 100?", 0);<br>
+				} while (num <= 100 && num)<br>
+			</p>
+			<p style="color: #000;">Цикл do..while повторяется, пока верны две проверки:<br>
+			   Проверка num <= 100 – то есть, введённое число всё ещё меньше 100.<br>
+			   Проверка && num вычисляется в false, когда num имеет значение null или пустая строка ''. В этом случае цикл while тоже нужно прекратить.<br>
+               Кстати, сравнение num <= 100 при вводе null даст true, так что вторая проверка необходима.</p>
+        </div>
+	</div>
+    <div class = "container">
+		<button class = "chapters">
+			<a href="index_basic.html">
+				<h3 class = "chaptersh3">⟸ Back</h3>
+			</a>
+		</button>
+	</div>
+	
+	<footer>
+		<div class = "footer_copyright">
+			<a href="http://high-wave.000webhostapp.com/">
+				<p>© 2021 High-Wave.com</p>
+			</a>
+		</div>
+	</footer>
+	<script src="js/libs.min.js"></script>
+	<script src="js/JS_basic_1.4.js"></script>
+</body>
+</html>

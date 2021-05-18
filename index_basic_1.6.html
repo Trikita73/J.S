@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Java Script (Basic)</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<h1 class="title_prog">Java Script Basic 6</h1>
+	<div class = "container">
+		<div class = "task">
+            <p>Вывести простые числа<br>
+               Натуральное число, большее 1, называется простым, если оно ни на что не делится, кроме себя и 1.<br>
+			   Другими словами, n > 1 – простое, если при его делении на любое число кроме 1 и n есть остаток.<br>
+			   Например, 5 это простое число, оно не может быть разделено без остатка на 2, 3 и 4.<br>
+			   Напишите код, который выводит все простые числа из интервала от 2 до n.<br>
+			   Для n = 10 результат должен быть 2,3,5,7.<br>
+			   P.S. Код также должен легко модифицироваться для любых других интервалов.<br>
+            </p>
+            <div class = "task_refresh"><p>Чтоб запустить задачу нужно обновить страницу!</p></div>
+        </div>
+        <div class = "task_example">
+            <p>let n = 10;<br>
+			nextPrime:<br>
+			for (let i = 2; i <= n; i++) { // Для всех i...<br>
+  			for (let j = 2; j < i; j++) { // проверить, делится ли число..<br>
+    			if (i % j == 0) continue nextPrime; // не подходит, берём следующее<br>
+ 			 }<br>
+  			alert( i ); // простое число<br>
+  			}
+			</p>
+			<p style="color: #000;">Это решение с помошью метки<br>
+				Давайте воспользуемся вложенными циклами:<br>
+				Для всех i от 1 до 10 {<br>
+				  проверить, делится ли число i на какое-либо из чисел до него<br>
+				  если делится, то это i не подходит, берём следующее<br>
+				  если не делится, то i - простое число<br>
+				}<br>
+			</p>
+        </div>
+	</div>
+    <div class = "container">
+		<button class = "chapters">
+			<a href="index_basic.html">
+				<h3 class = "chaptersh3">⟸ Back</h3>
+			</a>
+		</button>
+	</div>
+	
+	<footer>
+		<div class = "footer_copyright">
+			<a href="http://high-wave.000webhostapp.com/">
+				<p>© 2021 High-Wave.com</p>
+			</a>
+		</div>
+	</footer>
+	<script src="js/libs.min.js"></script>
+	<script src="js/JS_basic_1.6.js"></script>
+</body>
+</html>
