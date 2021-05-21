@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Java Script (HomeWork)</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<h1 class="title_prog">J.S. Массивы 13</h1>
+	<div class = "container">
+		<div class = "task">
+            <p>Сумма введённых чисел<br>
+				Напишите функцию sumInput(), которая:<br>
+
+				Просит пользователя ввести значения, используя prompt и сохраняет их в массив.<br>
+				Заканчивает запрашивать значения, когда пользователь введёт не числовое значение, пустую<br> строку или нажмёт «Отмена».<br>
+				Подсчитывает и возвращает сумму элементов массива.<br>
+				P.S. Ноль 0 – считается числом, не останавливайте ввод значений при вводе «0».<br></p>
+            <div class = "task_refresh"><p>Чтоб запустить задачу нужно обновить страницу!</p></div>
+        </div>
+        <div class = "task_example">
+            <p>function sumInput() {<br>
+
+				  let numbers = [];<br>
+
+				  while (true) {<br>
+
+				    let value = prompt("Введите число", 0);<br>
+
+				    // Прекращаем ввод?<br>
+				    if (value === "" || value === null || !isFinite(value)) break;<br>
+
+				    numbers.push(+value);<br>
+				  }<br>
+
+				  let sum = 0;<br>
+				  for (let number of numbers) {<br>
+				    sum += number;<br>
+				  }<br>
+				  return sum;<br>
+				}<br>
+
+				alert( sumInput() );
+            </p>
+            <p style="color: #000;">Обратите внимание на малозаметную, но важную деталь решения. Мы не преобразуем value в число сразу после prompt, потому что после value = +value мы не сможем отличить пустую строку (конец записи) от «0» (разрешённое число). Мы сделаем это позже.<br>
+			</p>
+        </div>
+	</div>
+    <div class = "container">
+		<button class = "chapters">
+			<a href="index_homework_part_1.html">
+				<h3 class = "chaptersh3">⟸ Back</h3>
+			</a>
+		</button>
+	</div>
+	
+	<footer>
+		<div class = "footer_copyright">
+			<a href="http://high-wave.000webhostapp.com/">
+				<p>© 2021 High-Wave.com</p>
+			</a>
+		</div>
+	</footer>
+	<script src="js/libs.min.js"></script>
+	<script src="js/JS_homework_part_1.14.js"></script>
+</body>
+</html>

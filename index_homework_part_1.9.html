@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Java Script (HomeWork)</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<h1 class="title_prog">J.S. Объекты 9</h1>
+	<div class = "container">
+		<div class = "task">
+            <p>Сумма свойств объекта<br>
+				У нас есть объект, в котором хранятся зарплаты нашей команды:<br>
+			let salaries = {<br>
+			  John: 100,<br>
+			  Ann: 160,<br>
+			  Pete: 130<br>
+			}</p>
+            <div class = "task_refresh"><p>Чтоб запустить задачу нужно обновить страницу!</p></div>
+        </div>
+        <div class = "task_example">
+            <p>let salaries = {<br>
+				  John: 100,<br>
+				  Ann: 160,<br>
+				  Pete: 130<br>
+				};<br>
+
+				let sum = 0;<br>
+				for (let key in salaries) {<br>
+				  sum += salaries[key];<br>
+				}<br>
+
+				alert(sum); // 390
+            </p>
+            <p style="color: #000;">код для суммирования всех зарплат и сохраните<br> 		результат в переменной sum. Должно получиться 390.<br>
+
+				Если объект salaries пуст, то результат должен быть 0.
+			</p>
+        </div>
+	</div>
+    <div class = "container">
+		<button class = "chapters">
+			<a href="index_homework_part_1.html">
+				<h3 class = "chaptersh3">⟸ Back</h3>
+			</a>
+		</button>
+	</div>
+	
+	<footer>
+		<div class = "footer_copyright">
+			<a href="http://high-wave.000webhostapp.com/">
+				<p>© 2021 High-Wave.com</p>
+			</a>
+		</div>
+	</footer>
+	<script src="js/libs.min.js"></script>
+	<script src="js/JS_homework_part_1.9.js"></script>
+</body>
+</html>

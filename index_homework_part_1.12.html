@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Java Script (HomeWork)</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<h1 class="title_prog">J.S. Объекты 11</h1>
+	<div class = "container">
+		<div class = "task">
+            <p>Цепь вызовов<br>
+				Это ladder (лестница) – объект, который позволяет подниматься вверх и спускаться:<br>
+				let ladder = {<br>
+				  step: 0,<br>
+				  up() {<br>
+				    this.step++;<br>
+				  },<br>
+				  down() {<br>
+				    this.step--;<br>
+				  },<br>
+				  showStep: function() { // показывает текущую ступеньку<br>
+				    alert( this.step );<br>
+				  }<br>
+				};<br>Теперь, если нам нужно сделать несколько последовательных вызовов, мы можем выполнить это так:<br>ladder.up();<br>
+				ladder.up();<br>
+				ladder.down();<br>
+				ladder.showStep(); // 1<br>
+				Измените код методов up, down и showStep таким образом, чтобы их вызов можно было сделать по цепочке, например так:<br>ladder.up().up().down().showStep(); // 1<br>Такой подход широко используется в библиотеках JavaScript.<br>
+
+</p>
+            <div class = "task_refresh"><p>Чтоб запустить задачу нужно обновить страницу!</p></div>
+        </div>
+        <div class = "task_example">
+            <p>let ladder = {<br>
+  step: 0,<br>
+  up() {<br>
+    this.step++;<br>
+    return this;<br>
+  },<br>
+  down() {<br>
+    this.step--;<br>
+    return this;<br>
+  },<br>
+  showStep() {<br>
+    alert( this.step );<br>
+    return this;<br>
+  }<br>
+}<br>
+
+ladder.up().up().down().up().down().showStep(); // 1
+            </p>
+            <p style="color: #000;">Мы также можем писать один вызов на одной строке. Для длинной цепи вызовов это более читабельно:<br>ladder<br>
+			  .up()<br>
+			  .up()<br>
+			  .down()<br>
+			  .up()<br>
+			  .down()<br>
+			  .showStep(); // 1<br>
+			</p>
+        </div>
+	</div>
+    <div class = "container">
+		<button class = "chapters">
+			<a href="index_homework_part_1.html">
+				<h3 class = "chaptersh3">⟸ Back</h3>
+			</a>
+		</button>
+	</div>
+	
+	<footer>
+		<div class = "footer_copyright">
+			<a href="http://high-wave.000webhostapp.com/">
+				<p>© 2021 High-Wave.com</p>
+			</a>
+		</div>
+	</footer>
+	<script src="js/libs.min.js"></script>
+	<script src="js/JS_homework_part_1.12.js"></script>
+</body>
+</html>

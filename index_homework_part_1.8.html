@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Java Script (HomeWork)</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<h1 class="title_prog">J.S. Объекты 8</h1>
+	<div class = "container">
+		<div class = "task">
+            <p>Проверка на пустоту<br>
+				Напишите функцию isEmpty(obj), которая возвращает true, если у объекта нет свойств, иначе false.
+				Должно работать так:<br>
+				let schedule = {};<br>
+					alert( isEmpty(schedule) ); // true<br>
+					schedule["8:30"] = "get up";<br>
+					alert( isEmpty(schedule) ); // false
+					</p>
+        </div>
+        <div class = "task_example">
+            <p>function isEmpty(obj) {<br>
+				  for (let key in obj) {<br>
+				    // если тело цикла начнет выполняться - значит в объекте есть свойства<br>
+				    return false;<br>
+				  }<br>
+				  return true;<br>
+				}
+            </p>
+            <p style="color: #000;">Просто в цикле перебираем свойства объекта и возвращаем false, как только встречаем свойство.
+			</p>
+        </div>
+	</div>
+    <div class = "container">
+		<button class = "chapters">
+			<a href="index_homework_part_1.html">
+				<h3 class = "chaptersh3">⟸ Back</h3>
+			</a>
+		</button>
+	</div>
+	
+	<footer>
+		<div class = "footer_copyright">
+			<a href="http://high-wave.000webhostapp.com/">
+				<p>© 2021 High-Wave.com</p>
+			</a>
+		</div>
+	</footer>
+	<script src="js/libs.min.js"></script>
+	<script src="js/JS_homework_part_1.8.js"></script>
+</body>
+</html>

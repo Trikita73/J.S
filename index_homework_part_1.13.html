@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Java Script (HomeWork)</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<h1 class="title_prog">J.S. Массивы 12</h1>
+	<div class = "container">
+		<div class = "task">
+            <p>Операции с массивами<br>
+				Давайте произведём 5 операций с массивом.<br>
+
+				Создайте массив styles с элементами «Джаз» и «Блюз».<br>
+				Добавьте «Рок-н-ролл» в конец.<br>
+				Замените значение в середине на «Классика». Ваш код для поиска значения в середине должен <br>работать для массивов с любой длиной.<br>
+				Удалите первый элемент массива и покажите его.<br>
+				Вставьте «Рэп» и «Регги» в начало массива.<br>
+				Массив по ходу выполнения операций:<br>
+
+				Джаз, Блюз<br>
+				Джаз, Блюз, Рок-н-ролл<br>
+				Джаз, Классика, Рок-н-ролл<br>
+				Классика, Рок-н-ролл<br>
+				Рэп, Регги, Классика, Рок-н-ролл</p>
+            <div class = "task_refresh"><p>Чтоб запустить задачу нужно обновить страницу!</p></div>
+        </div>
+        <div class = "task_example">
+            <p>let styles = ["Джаз", "Блюз"];<br>
+				styles.push("Рок-н-ролл");<br>
+				styles[Math.floor((styles.length - 1) / 2)] = "Классика";<br>
+				alert( styles.shift() );<br>
+				styles.unshift("Рэп", "Регги");
+            </p>
+        </div>
+	</div>
+    <div class = "container">
+		<button class = "chapters">
+			<a href="index_homework_part_1.html">
+				<h3 class = "chaptersh3">⟸ Back</h3>
+			</a>
+		</button>
+	</div>
+	
+	<footer>
+		<div class = "footer_copyright">
+			<a href="http://high-wave.000webhostapp.com/">
+				<p>© 2021 High-Wave.com</p>
+			</a>
+		</div>
+	</footer>
+	<script src="js/libs.min.js"></script>
+	<script src="js/JS_homework_part_1.13.js"></script>
+</body>
+</html>
