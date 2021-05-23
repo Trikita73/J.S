@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Java Script (HomeWork)</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<h1 class="title_prog">J.S. Методы массивов 20</h1>
+	<div class = "container">
+		<div class = "task">
+            <p>Получить средний возраст<br>
+
+				Напишите функцию getAverageAge(users), которая принимает массив объектов со свойством age и возвращает средний возраст.<br>
+
+				Формула вычисления среднего арифметического значения: (age1 + age2 + ... + ageN) / N.<br>
+
+				Например:<br>
+
+				let vasya = { name: "Вася", age: 25 };<br>
+				let petya = { name: "Петя", age: 30 };<br>
+				let masha = { name: "Маша", age: 29 };<br>
+
+				let arr = [ vasya, petya, masha ];<br>
+
+				alert( getAverageAge(arr) ); // (25 + 30 + 29) / 3 = 28</p>
+            <div class = "task_refresh"><p>Чтоб запустить задачу нужно обновить страницу!</p></div>
+        </div>
+        <div class = "task_example">
+            <p>function getAverageAge(users) {<br>
+				  return users.reduce((prev, user) => prev + user.age, 0) / users.length;<br>
+				}<br>
+
+				let vasya = { name: "Вася", age: 25 };<br>
+				let petya = { name: "Петя", age: 30 };<br>
+				let masha = { name: "Маша", age: 29 };<br>
+
+				let arr = [ vasya, petya, masha ];<br>
+
+				alert( getAverageAge(arr) ); // 28
+            </p>
+            <p style="color: #000;"><br>
+			</p>
+        </div>
+	</div>
+    <div class = "container">
+		<button class = "chapters">
+			<a href="index_homework_part_1.html">
+				<h3 class = "chaptersh3">⟸ Back</h3>
+			</a>
+		</button>
+	</div>
+	
+	<footer>
+		<div class = "footer_copyright">
+			<a href="http://high-wave.000webhostapp.com/">
+				<p>© 2021 High-Wave.com</p>
+			</a>
+		</div>
+	</footer>
+	<script src="js/libs.min.js"></script>
+	<script src="js/JS_homework_part_1.21.js"></script>
+</body>
+</html>

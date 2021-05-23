@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Java Script (HomeWork)</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<h1 class="title_prog">J.S. Методы массивов 21</h1>
+	<div class = "container">
+		<div class = "task">
+            <p>Трансформировать в объекты<br>
+				У вас есть массив объектов user, и у каждого из объектов есть name, surname и id.<br>
+
+				Напишите код, который создаст ещё один массив объектов с параметрами id и fullName, где fullName – состоит из name и surname.<br>
+
+				Например:<br>
+
+				let vasya = { name: "Вася", surname: "Пупкин", id: 1 };<br>
+				let petya = { name: "Петя", surname: "Иванов", id: 2 };<br>
+				let masha = { name: "Маша", surname: "Петрова", id: 3 };<br>
+
+				let users = [ vasya, petya, masha ];<br>
+
+				let usersMapped = /* ... ваш код ... */<br>
+
+				/*<br>
+				usersMapped = [<br>
+				  { fullName: "Вася Пупкин", id: 1 },<br>
+				  { fullName: "Петя Иванов", id: 2 },<br>
+				  { fullName: "Маша Петрова", id: 3 }<br>
+				]<br>
+				*/<br>
+
+				alert( usersMapped[0].id ) // 1<br>
+				alert( usersMapped[0].fullName ) // Вася Пупкин<br>
+				Итак, на самом деле вам нужно трансформировать один массив объектов в другой. Попробуйте использовать =>. Это небольшая уловка.</p>
+            <div class = "task_refresh"><p>Чтоб запустить задачу нужно обновить страницу!</p></div>
+        </div>
+        <div class = "task_example">
+            <p>let vasya = { name: "Вася", surname: "Пупкин", id: 1 };<br>
+let petya = { name: "Петя", surname: "Иванов", id: 2 };<br>
+let masha = { name: "Маша", surname: "Петрова", id: 3 };<br>
+
+let users = [ vasya, petya, masha ];<br>
+
+let usersMapped = users.map(user => ({<br>
+  fullName: `${user.name} ${user.surname}`,<br>
+  id: user.id<br>
+}));<br>
+
+/*<br>
+usersMapped = [<br>
+  { fullName: "Вася Пупкин", id: 1 },<br>
+  { fullName: "Петя Иванов", id: 2 },<br>
+  { fullName: "Маша Петрова", id: 3 }<br>
+]<br>
+*/<br>
+
+alert( usersMapped[0].id ); // 1<br>
+alert( usersMapped[0].fullName ); // Вася Пупкин
+            </p>
+            <p style="color: #000;">Обратите внимание, что для стрелочных функций мы должны использовать дополнительные скобки.<br>
+
+				Мы не можем написать вот так:<br>
+
+				let usersMapped = users.map(user => {<br>
+				  fullName: `${user.name} ${user.surname}`,<br>
+				  id: user.id<br>
+				});<br>
+				Как мы помним, есть две функции со стрелками: без тела value => expr и с телом value => {...}.<br>
+
+				Здесь JavaScript будет трактовать { как начало тела функции, а не начало объекта. Чтобы обойти это, нужно заключить их в «нормальные» скобки:<br>
+
+				let usersMapped = users.map(user => ({<br>
+				  fullName: `${user.name} ${user.surname}`,<br>
+				  id: user.id<br>
+				}));
+			</p>
+        </div>
+	</div>
+    <div class = "container">
+		<button class = "chapters">
+			<a href="index_homework_part_1.html">
+				<h3 class = "chaptersh3">⟸ Back</h3>
+			</a>
+		</button>
+	</div>
+	
+	<footer>
+		<div class = "footer_copyright">
+			<a href="http://high-wave.000webhostapp.com/">
+				<p>© 2021 High-Wave.com</p>
+			</a>
+		</div>
+	</footer>
+	<script src="js/libs.min.js"></script>
+	<script src="js/JS_homework_part_1.22.js"></script>
+</body>
+</html>

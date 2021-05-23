@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Java Script (HomeWork)</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<h1 class="title_prog">J.S. Методы массивов 17</h1>
+	<div class = "container">
+		<div class = "task">
+            <p>Скопировать и отсортировать массив<br>
+
+				У нас есть массив строк arr. Нужно получить отсортированную копию, но оставить arr неизменённым.<br>
+
+				Создайте функцию copySorted(arr), которая будет возвращать такую копию.<br>
+
+				let arr = ["HTML", "JavaScript", "CSS"];<br>
+
+				let sorted = copySorted(arr);<br>
+
+				alert( sorted ); // CSS, HTML, JavaScript<br>
+				alert( arr ); // HTML, JavaScript, CSS (без изменений)</p>
+            <div class = "task_refresh"><p>Чтоб запустить задачу нужно обновить страницу!</p></div>
+        </div>
+        <div class = "task_example">
+            <p>function copySorted(arr) {<br>
+				  return arr.slice().sort();<br>
+				}<br>
+
+				let arr = ["HTML", "JavaScript", "CSS"];<br>
+
+				let sorted = copySorted(arr);<br>
+
+				alert( sorted );<br>
+				alert( arr );
+            </p>
+            <p style="color: #000;">Для копирования массива используем slice() и тут же – сортировку
+			</p>
+        </div>
+	</div>
+    <div class = "container">
+		<button class = "chapters">
+			<a href="index_homework_part_1.html">
+				<h3 class = "chaptersh3">⟸ Back</h3>
+			</a>
+		</button>
+	</div>
+	
+	<footer>
+		<div class = "footer_copyright">
+			<a href="http://high-wave.000webhostapp.com/">
+				<p>© 2021 High-Wave.com</p>
+			</a>
+		</div>
+	</footer>
+	<script src="js/libs.min.js"></script>
+	<script src="js/JS_homework_part_1.18.js"></script>
+</body>
+</html>
