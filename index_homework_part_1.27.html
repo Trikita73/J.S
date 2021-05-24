@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Java Script (HomeWork)</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<h1 class="title_prog">J.S. DOM Элементы 26</h1>
+	<div class = "container">
+		<div class = "task">
+            <p>Сделайте внешние ссылки оранжевыми<br>
+				Сделайте все внешние ссылки оранжевыми, изменяя их свойство style.<br>
+
+				Ссылка является внешней, если:<br>
+
+				Её href содержит ://<br>
+				Но не начинается с http://internal.com.<br>
+				</p>
+        </div>
+        <div class = "task_example">
+        	<p style="color: #000;">Во-первых, мы должны найти все внешние ссылки.<br>
+
+				Это можно сделать двумя способами.<br>
+
+				Первый – это найти все ссылки, используя document.querySelectorAll('a'), а затем отфильтровать ненужное:<br>
+			</p>
+            <p>let links = document.querySelectorAll('a');<br>
+
+				for (let link of links) {<br>
+				  let href = link.getAttribute('href');<br>
+				  if (!href) continue; // нет атрибута<br>
+
+				  if (!href.includes('://')) continue; // нет протокола<br>
+
+				  if (href.startsWith('http://internal.com')) continue; // внутренняя<br>
+
+				  link.style.color = 'orange';<br>
+				}<br>
+            </p>
+            <p style="color: #000;">Пожалуйста, обратите внимание: мы используем<br> 			link.getAttribute('href'). Не link.href, потому что нам нужно значение из HTML.<br>
+
+				…Другой, более простой путь – добавить проверку в CSS-селектор:<br>
+			</p>
+			<p>// найти все ссылки, атрибут href у которых содержит ://<br>
+				// и при этом href не начинается с http://internal.com<br>
+				let selector = 'a[href*="://"]:not([href^="http://internal.com"])';<br>
+				let links = document.querySelectorAll(selector);<br>
+			
+
+				links.forEach(link => link.style.color = 'orange');
+			</p>
+        </div>
+	</div>
+	<div class = "container">
+		<button class = "chapters">
+			<a href="index_homework_part_dom_3.html">
+				<h3 class = "chaptersh3">Задача</h3>
+			</a>
+		</button>
+	</div>
+    <div class = "container">
+		<button class = "chapters">
+			<a href="index_homework_part_1.html">
+				<h3 class = "chaptersh3">⟸ Back</h3>
+			</a>
+		</button>
+	</div>
+	
+	<footer>
+		<div class = "footer_copyright">
+			<a href="http://high-wave.000webhostapp.com/">
+				<p>© 2021 High-Wave.com</p>
+			</a>
+		</div>
+	</footer>
+	<script src="js/libs.min.js"></script>
+</body>
+</html>
