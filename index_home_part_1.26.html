@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Java Script (HomeWork)</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<h1 class="title_prog">J.S DOM 3</h1>
+	<div class = "container">
+		<div class = "task">
+            <p>
+			Напишите функцию highlight, которая внесёт изменения в таблицу.<br>
+
+				В качестве аргумента функция принимает элемент таблицы (тег table) c вот такой структурой:<br>
+				table class="js-teachers"<br>
+				  thead<br>
+				    tr<br>
+				      td>Name /td<br>
+				      td>Age /td<br>
+				      td>Gender /td<br>
+				      td>Status /td<br>
+				    /tr<br>
+				  /thead<br>
+				  tbody<br>
+				    tr<br>
+				      td>Ilia /td<br>
+				      td>30 /td<br>
+				      td>m /td<br>
+				      td data-available="true">Free /td<br>
+				    /tr<br>
+				    tr<br>
+				      td>Tim /td<br>
+				      td>39 /td<br>
+				      td>m /td<br>
+				      td data-available="false">On duty /td<br>
+				    /tr<br>
+
+				    !-- Строк в таблице может быть больше--><br>
+				  /tbody<br>
+				/table<br>
+
+				Полную таблицу и пример использования можно посмотреть в файле index.html.<br>
+
+				Функция highlight для каждой строки tr таблицы должна сделать следующее:<br>
+
+				Проставить класс available/unavailable в зависимости от значения атрибута data-available у ячейки Status. Если её значение true – класс available, если её значение false – класс unavailable.<br>
+				Проставить атрибут hidden, если атрибута data-available нет вообще.<br>
+				Проставить класс male/female в зависимости от содержимого ячейки Gender. Если её значение m – класс male, Если её значение f – класс female.<br>
+				Добавить inline-стиль style="text-decoration: line-through", если значение ячейки Age меньше 18.<br>
+				(!!!) Обращаем отдельное внимание, что все манипуляции нужно делать со СТРОКАМИ таблицы (тег tr). Т.е. вы проверяете ячейку (тег td), но изменяете строку (тег tr). Это распространённая ошибка, из-за которой часто не проходит автоматическая проверка.<br>
+
+				/**<br>
+				 * Метод устанавливает необходимые по условию атрибуты таблице<br>
+				 * @param {Element} table<br>
+				 */<br>
+				function highlight(table) {<br>
+				}<br>
+
+			</p>
+        </div>
+	</div>
+	<div class = "container">
+		<button class = "chapters">
+			<a href="index_home_part_dom_3.html">
+				<h3 class = "chaptersh3">Задача</h3>
+			</a>
+		</button>
+	</div>
+    <div class = "container">
+		<button class = "chapters">
+			<a href="index_home_part_1.html">
+				<h3 class = "chaptersh3">⟸ Back</h3>
+			</a>
+		</button>
+	</div>
+	
+	<footer>
+		<div class = "footer_copyright">
+			<a href="http://high-wave.000webhostapp.com/">
+				<p>© 2021 High-Wave.com</p>
+			</a>
+		</div>
+	</footer>
+	<script src="js/libs.min.js"></script>
+</body>
+</html>

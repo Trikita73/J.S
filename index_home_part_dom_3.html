@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <script src="js/JS_home_part_1.26.js"></script>
+  <meta charset="UTF-8">
+  <title>Java Script (Basic)</title>
+  <meta name="description" content="">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <table class="js-teachers">
+    <thead>
+      <tr>
+        <td>Name</td>
+        <td>Age</td>
+        <td>Gender</td>
+        <td>Status</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Ilia</td>
+        <td>30</td>
+        <td>m</td>
+        <td data-available="true">Free</td>
+      </tr>
+      <tr>
+        <td>Tim</td>
+        <td>39</td>
+        <td>m</td>
+        <td data-available="false">On duty</td>
+      </tr>
+      <tr>
+        <td>Marina</td>
+        <td>25</td>
+        <td>f</td>
+        <td data-available="true">Ready to teach</td>
+      </tr>
+      <tr>
+        <td>Klivden</td>
+        <td>42</td>
+        <td>m</td>
+        <td>Leeeroy Jenkins!</td>
+      </tr>
+      <tr>
+        <td>Ivan</td>
+        <td>17</td>
+        <td>m</td>
+        <td data-available="true">Ready to teach</td>
+      </tr>
+    </tbody>
+  </table>
+  <script>
+    let table = document.querySelector('.js-teachers');
+
+    highlight(table);
+  </script>
+  <div class = "task">
+    <div class = "task_refresh"><p>Открыть консоль с файлом js. чтоб увидеть решение.</p></div>
+  </div>
+  <div class = "container">
+    <button class = "chapters">
+      <a href="index_home_part_1.26.html">
+        <h3 class = "chaptersh3">⟸ Back</h3>
+      </a>
+    </button>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Java Script (HomeWork)</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<h1 class="title_prog">J.S Строки</h1>
+	<div class = "container">
+		<div class = "task">
+            <p>
+				Реализуйте функцию, которая принимает строку с числами и возвращает объект, содержащий минимальное и максимальное значения чисел из этой строки.<br>
+
+				Пример строки, которую принимает функция:<br>
+
+				const inputData = '1, -5.8 или 10, хотя 34 + -5.3 и 73';<br>
+				Числа в строке могут быть разделены либо пробелами, либо запятыми.<br>
+
+				А результат она должна возвращать в виде объекта в формате:<br>
+
+				let result = {<br>
+				    min: -5.8,<br>
+				    max: 73<br>
+				}<br>
+				Пример работы функции:<br>
+
+				let inputData = '1, -5.8 или 10, хотя 34 + -5.3 и 73';<br>
+
+				function getMinMax(str) {<br>
+				  // ...<br>
+				}<br>
+
+				console.log(getMinMax(inputData)); // { min: -5.8, max: 73  }<br>
+				Небольшая подсказка: если числа в строке могут быть разделены только пробелами(' ') или запятыми(','), может ли нам помочь метод строки split c выделением чисел из неё?:)
+
+			</p>
+            <div class = "task_refresh"><p>Открыть консоль с файлом js. чтоб увидеть решение.</p></div>
+        </div>
+	</div>
+    <div class = "container">
+		<button class = "chapters">
+			<a href="index_home_part_1.html">
+				<h3 class = "chaptersh3">⟸ Back</h3>
+			</a>
+		</button>
+	</div>
+	
+	<footer>
+		<div class = "footer_copyright">
+			<a href="http://high-wave.000webhostapp.com/">
+				<p>© 2021 High-Wave.com</p>
+			</a>
+		</div>
+	</footer>
+	<script src="js/libs.min.js"></script>
+	<script src="js/JS_home_part_1.23.js"></script>
+</body>
+</html>
