@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Java Script (HomeWork)</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<h1 class="title_prog">J.S Обработчик событий 7</h1>
+	<div class = "container">
+		<div class = "task">
+            <p>
+				Поймайте переход по ссылке<br>
+				Сделайте так, чтобы при клике на ссылки внутри элемента id="contents" пользователю выводился вопрос о том, действительно ли он хочет покинуть страницу, и если он не хочет, то прерывать переход по ссылке.<br>
+				Детали:<br>
+
+				Содержимое #contents может быть загружено динамически и присвоено при помощи innerHTML. Так что найти все ссылки и поставить на них обработчики нельзя. Используйте делегирование.<br>
+				Содержимое может иметь вложенные теги, в том числе внутри ссылок, например, a href="..">i.../i/a.<br>
+				Это – классическая задача на тему делегирования.<br>
+
+				В реальной жизни мы можем перехватить событие и создать AJAX-запрос к серверу, который сохранит информацию о том, по какой ссылке ушёл посетитель. Или мы можем загрузить содержимое и отобразить его прямо на странице (если допустимо).<br>
+
+				Всё, что нам необходимо, это поймать событие contents.onclick и использовать функцию confirm, чтобы задать вопрос пользователю. Хорошей идеей было бы использовать link.getAttribute('href') вместо link.href для ссылок. Смотрите решение в песочнице.<br>
+
+			</p>
+        </div>
+	</div>
+	<div class = "container">
+		<button class = "chapters">
+			<a href="index_homework_part_2_dom_7.html">
+				<h3 class = "chaptersh3">Задача</h3>
+			</a>
+		</button>
+	</div>
+    <div class = "container">
+		<button class = "chapters">
+			<a href="index_homework_part_2.html">
+				<h3 class = "chaptersh3">⟸ Back</h3>
+			</a>
+		</button>
+	</div>
+	
+	<footer>
+		<div class = "footer_copyright">
+			<a href="http://high-wave.000webhostapp.com/">
+				<p>© 2021 High-Wave.com</p>
+			</a>
+		</div>
+	</footer>
+	<script src="js/libs.min.js"></script>
+</body>
+</html>

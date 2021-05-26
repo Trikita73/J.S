@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Java Script (HomeWork)</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<h1 class="title_prog">J.S Обработчик событий 1</h1>
+	<div class = "container">
+		<div class = "task">
+            <p>
+				Передвиньте мяч по полю<br>
+				Пусть мяч перемещается при клике на поле, туда, куда был клик.<br>
+				Требования:<br>
+
+				Центр мяча должен совпадать с местом нажатия мыши (если это возможно без пересечения краёв поля);<br>
+				CSS-анимация желательна, но не обязательна;<br>
+				Мяч ни в коем случае не должен пересекать границы поля;<br>
+				При прокрутке страницы ничего не должно ломаться;<br>
+				Заметки:<br>
+
+				Код должен уметь работать с различными размерами мяча и поля, не привязываться к каким-либо фиксированным значениям.<br>
+				Используйте свойства event.clientX/event.clientY для определения координат мыши при клике.<br>
+				Сначала мы должны выбрать метод позиционирования мяча.<br>
+
+				Мы не можем использовать position:fixed, поскольку прокрутка страницы будет перемещать мяч с поля.<br>
+
+				Правильнее использовать position:absolute, и, чтобы сделать позиционирование действительно надёжным, сделаем само поле (field) позиционированным.<br>
+
+				Тогда мяч будет позиционирован относительно поля:<br>
+				#field {<br>
+				  width: 200px;<br>
+				  height: 150px;<br>
+				  position: relative;<br>
+				}<br>
+
+				#ball {<br>
+				  position: absolute;<br>
+				  left: 0; /* по отношению к ближайшему расположенному предку (поле) */<br>
+				  top: 0;<br>
+				  transition: 1s all; /* CSS-анимация для значений left/top делает передвижение мяча плавным */<br>
+				}<br>
+				У нас есть значения event.clientX/clientY – координаты нажатия мышки относительно окна браузера;<br>
+
+				Чтобы получить значение left для мяча после нажатия мышки относительно поля, мы должны из координаты нажатия мышки вычесть координату левого края поля и ширину границы:<br>
+
+				let left = event.clientX - fieldCoords.left - field.clientLeft;<br>
+				Значение ball.style.left означает «левый край элемента» (мяча). И если мы назначим такой left для мяча, тогда его левая граница, а не центр, будет под курсором мыши.<br>
+
+				Нам нужно сдвинуть мяч на половину его высоты вверх и половину его ширины влево, чтобы центр мяча точно совпадал с точкой нажатия мышки.<br>
+
+				В итоге значение для left будет таким:<br>
+
+				let left = event.clientX - fieldCoords.left - field.clientLeft - ball.offsetWidth/2;<br>
+				Вертикальная координата будет вычисляться по той же логике.<br>
+
+				Следует помнить, что ширина и высота мяча должна быть известна в тот момент, когда мы получаем значение ball.offsetWidth. Это значение может задаваться в HTML или CSS.<br>
+			</p>
+        </div>
+	</div>
+	<div class = "container">
+		<button class = "chapters">
+			<a href="index_homework_part_2_dom_1.html">
+				<h3 class = "chaptersh3">Задача</h3>
+			</a>
+		</button>
+	</div>
+    <div class = "container">
+		<button class = "chapters">
+			<a href="index_homework_part_2.html">
+				<h3 class = "chaptersh3">⟸ Back</h3>
+			</a>
+		</button>
+	</div>
+	
+	<footer>
+		<div class = "footer_copyright">
+			<a href="http://high-wave.000webhostapp.com/">
+				<p>© 2021 High-Wave.com</p>
+			</a>
+		</div>
+	</footer>
+	<script src="js/libs.min.js"></script>
+</body>
+</html>

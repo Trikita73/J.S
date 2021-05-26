@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Java Script (HomeWork)</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<h1 class="title_prog">J.S Обработчик событий 6</h1>
+	<div class = "container">
+		<div class = "task">
+            <p>
+				Поведение "подсказка"<br>
+
+				Напишите JS-код, реализующий поведение «подсказка».<br>
+
+				При наведении мыши на элемент с атрибутом data-tooltip, над ним должна показываться подсказка и скрываться при переходе на другой элемент.<br>
+				В этой задаче мы полагаем, что во всех элементах с атрибутом data-tooltip – только текст. То есть, в них нет вложенных тегов (пока).<br>
+
+				Детали оформления:<br>
+
+				Отступ от подсказки до элемента с data-tooltip должен быть 5px по высоте.<br>
+				Подсказка должна быть, по возможности, посередине элемента.<br>
+				Подсказка не должна вылезать за границы экрана, в том числе если страница частично прокручена, если нельзя показать сверху – показывать снизу элемента.<br>
+				Текст подсказки брать из значения атрибута data-tooltip. Это может быть произвольный HTML.<br>
+				Для решения вам понадобятся два события:<br>
+
+				mouseover срабатывает, когда указатель мыши заходит на элемент.<br>
+				mouseout срабатывает, когда указатель мыши уходит с элемента.<br>
+				Примените делегирование событий: установите оба обработчика на элемент document, чтобы отслеживать «заход» и «уход» курсора на элементы с атрибутом data-tooltip и управлять подсказками с их же помощью.<br>
+
+				После реализации поведения – люди, даже не знакомые с JavaScript смогут добавлять подсказки к элементам.<br>
+
+				P.S. В один момент может быть показана только одна подсказка.<br>
+
+			</p>
+        </div>
+	</div>
+	<div class = "container">
+		<button class = "chapters">
+			<a href="index_homework_part_2_dom_6.html">
+				<h3 class = "chaptersh3">Задача</h3>
+			</a>
+		</button>
+	</div>
+    <div class = "container">
+		<button class = "chapters">
+			<a href="index_homework_part_2.html">
+				<h3 class = "chaptersh3">⟸ Back</h3>
+			</a>
+		</button>
+	</div>
+	
+	<footer>
+		<div class = "footer_copyright">
+			<a href="http://high-wave.000webhostapp.com/">
+				<p>© 2021 High-Wave.com</p>
+			</a>
+		</div>
+	</footer>
+	<script src="js/libs.min.js"></script>
+</body>
+</html>
