@@ -13,21 +13,29 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<h1 class="title_prog">J.S Дилегирование</h1>
+	<h1 class="title_prog">J.S Калькулятор конструкотор</h1>
 	<div class = "container">
 		<div class = "task">
             <p>
-				Галерея изображений<br>
-				Создайте галерею изображений, в которой основное изображение изменяется при клике на уменьшенный вариант.<br>
-				P.S. Используйте делегирование.<br>
-				Решение состоит в том, чтобы добавить обработчик на контейнер #thumbs и отслеживать клики на ссылках. Если клик происходит по ссылке a, тогда меняем атрибут src элемента #largeImg на href уменьшенного изображения.<br>
+				Создайте функцию-конструктор Calculator, который создаёт объекты с тремя методами:<br>
+
+				read() запрашивает два значения при помощи prompt и сохраняет их значение в свойствах объекта.<br>
+				sum() возвращает сумму введённых свойств.<br>
+				mul() возвращает произведение введённых свойств<br>
+				Например:<br>
+
+				let calculator = new Calculator();<br>
+				calculator.read();<br>
+
+				alert( "Sum=" + calculator.sum() );<br>
+				alert( "Mul=" + calculator.mul() );<br>
 
 			</p>
         </div>
 	</div>
 	<div class = "container">
 		<button class = "chapters">
-			<a href="index_homework_part_2_dom_8.html">
+			<a href="index_homework_part_2_dom_10.html">
 				<h3 class = "chaptersh3">Задача</h3>
 			</a>
 		</button>

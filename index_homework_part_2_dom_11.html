@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Галерея</title>
+  <meta charset="UTF-8">
+    <title>Java Script (HomeWork)</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+ 
+<div style="margin-top: 150px;">
+  <div class = "task">
+    <div class = "task_refresh"><p>Открыть консоль с файлом html. чтоб увидеть решение.</p></div>
+  </div>
+  <div class = "container">
+    <button class = "chapters">
+      <a href="index_homework_part_3.0.html">
+        <h3 class = "chaptersh3">⟸ Back</h3>
+      </a>
+    </button>
+  </div>
+</div>
+
+<script>
+function Accumulator(startingValue) {
+  this.value = startingValue;
+
+  this.read = function() {
+    this.value += +prompt('Сколько нужно добавить?', 0);
+  };
+
+}
+
+let accumulator = new Accumulator(1);
+accumulator.read();
+accumulator.read();
+alert(accumulator.value);
+</script>
+
+</body>
+
+</html>

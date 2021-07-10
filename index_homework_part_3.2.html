@@ -13,21 +13,24 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<h1 class="title_prog">J.S Дилегирование</h1>
+	<h1 class="title_prog">J.S Заметка рядом с элементом</h1>
 	<div class = "container">
 		<div class = "task">
             <p>
-				Галерея изображений<br>
-				Создайте галерею изображений, в которой основное изображение изменяется при клике на уменьшенный вариант.<br>
-				P.S. Используйте делегирование.<br>
-				Решение состоит в том, чтобы добавить обработчик на контейнер #thumbs и отслеживать клики на ссылках. Если клик происходит по ссылке a, тогда меняем атрибут src элемента #largeImg на href уменьшенного изображения.<br>
+				Создайте функцию positionAt(anchor, position, elem), которая позиционирует элемент elem в зависимости от значения свойства position рядом с элементом anchor.<br>
 
+				Аргумент position – строка с одним из 3 значений:<br>
+
+				"top" – расположить elem прямо над anchor<br>
+				"right" – расположить elem непосредственно справа от anchor<br>
+				"bottom" – расположить elem прямо под anchor<br>
+				Она используется внутри функции showNote(anchor, position, html), которая уже есть в исходном коде задачи. Она создаёт и показывает элемент-«заметку» с текстом html на заданной позиции position рядом с элементом anchor<br>
 			</p>
         </div>
 	</div>
 	<div class = "container">
 		<button class = "chapters">
-			<a href="index_homework_part_2_dom_8.html">
+			<a href="index_homework_part_2_dom_12.html">
 				<h3 class = "chaptersh3">Задача</h3>
 			</a>
 		</button>
